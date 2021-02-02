@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name = "zwiz",
-    version = "0.0.1",
+    version = "0.1.0",
     author = "Per Olav Svendsen",
     author_email = "perolav@outlook.com",
     description = "A basic visualiser for Z-wave network in HS3",
@@ -15,13 +15,20 @@ setup(
     packages=['zwiz', 'tests'],
     long_description=read('README.md'),
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 1 - Alpha",
         "Topic :: Utilities",
         "License :: MIT License",
     ],
+    packages = ['zwiz'],
     install_requires=[
-        "pandas",
+        "pandas>=1.2.1",
+        "dash>=1.19.0",
+        "dash-core-components>=1.15.0",
+        "dash-html-components>=1.1.2",
         "requests",
-        "BeautifulSoup4",
-        "html5lib"]
+        "beautifulsoup4==4.9.3",
+        "html5lib>=1.1"],
+    tests_requires=[
+        "pytest>=6.2.2"
+        ]
 )
