@@ -1,1 +1,1 @@
-from ._hs3data import Network
+from ._hs3data import Network, Node, Edge
