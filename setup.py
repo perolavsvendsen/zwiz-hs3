@@ -9,6 +9,8 @@ setup(
     version = "0.1.0",
     author = "Per Olav Svendsen",
     author_email = "perolav@outlook.com",
+    url = "https://github.com/perolavsvendsen/zwiz-hs3",
+    download_url = "https://github.com/perolavsvendsen/zwiz-hs3/archive/v0.1.0.tar.gz",
     description = "A basic visualiser for Z-wave network in HS3",
     license = "MIT",
     keywords = "homeseer z-wave",
