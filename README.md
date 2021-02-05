@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/python-3.8-blue.svg)(https://www.python.org)
+[![](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org)
 
 ## zwiz-hs3
 Zwiz is a hobby-project attempting to graph my Z-wave network. It is made for visualizing a Z-wave network set up through Homeseer 3 on a UZB1 stick.
@@ -18,5 +18,5 @@ python app.py <ip adress to HS3> <port>
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Other relevant projects
-Z-wave graph for Home Assistant (Javascript): https://github.com/AdamNaj/ZWaveGraphHA
+Z-wave graph for Home Assistant (Javascript): [https://github.com/AdamNaj/ZWaveGraphHA]<br />
 Deprecated z-wave graph for Home Assistant (Python): https://github.com/OmenWild/home-assistant-z-wave-graph
