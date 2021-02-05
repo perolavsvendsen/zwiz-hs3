@@ -24,5 +24,5 @@ This is useful to understand the z-wave network, and spotting critical nodes. In
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Other relevant projects
-Z-wave graph for Home Assistant (Javascript): [https://github.com/AdamNaj/ZWaveGraphHA]<br />
+Z-wave graph for Home Assistant (Javascript): https://github.com/AdamNaj/ZWaveGraphHA<br />
 Deprecated z-wave graph for Home Assistant (Python): https://github.com/OmenWild/home-assistant-z-wave-graph
