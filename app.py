@@ -19,13 +19,13 @@ def main():
     port = args.port
 
     # data loading
+
     # initialize network object and scrape the HS3 website
     network = zwiz.Network(ip=ip, port=port)
     df = network.edges_df.copy()
     df = df[df['type'] == 'neighbor']
 
     # set temporary visual settings on the nodes
-    # separate loop now, plan to do this elsewhere later
     for node_id, node in network.nodes.items():
         if node_id == 1:
             node.marker_size = '10'

@@ -19,6 +19,8 @@ class Scrapers:
         Returns:
             header_table, nodes_table (tuple of str): HTML a string for the
             identified tables.
+        Raises:
+            ValueError: If either header or nodes table is not found in html.
 
         """
         tables = soup.find_all('table')
@@ -60,7 +62,7 @@ class Scrapers:
             'Number of Nodes': int(tds[2].contents[0].strip()),
             'Interface Name': tds[3].contents[0].strip(),
             'Interface Model': tds[4].contents[0].strip(),
-            'Node ID': int(tds[5].contents[0].strip()),
+            'NodeID': int(tds[5].contents[0].strip()),
         }
 
         return header

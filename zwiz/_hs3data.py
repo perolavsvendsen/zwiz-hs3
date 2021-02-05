@@ -85,7 +85,7 @@ class Network:
         self.number_of_nodes = self.header["Number of Nodes"]
         self.interface_name = self.header["Interface Name"]
         self.interface_model = self.header["Interface Model"]
-        self.node_id = self.header["Node ID"]
+        self.node_id = self.header["NodeID"]
 
         # The network itself has a node
         self.node = self.nodes[self.node_id]
@@ -175,7 +175,10 @@ class Network:
             if faulty_route:
                 continue
 
-            route = [node] + [nodes[r] for r in node.last_working_route] + [self.node]
+            if node.last_working_route == [self.node.node_id]:
+                route = [node, self.node]
+            else:
+                route = [node] + [nodes[r] for r in node.last_working_route] + [self.node]
             pairs = [(route[r], route[r + 1]) for r in range(len(route) - 1)]
 
             for source, target in pairs:
