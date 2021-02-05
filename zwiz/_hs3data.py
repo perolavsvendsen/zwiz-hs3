@@ -17,12 +17,15 @@
 
 import requests
 from bs4 import BeautifulSoup
+import logging
 import pandas as pd
 from zwiz._utils import Scrapers
 
 # pylint: disable=C0103   # Non-snake variable names
 # pylint: disable=R0902   # Many instances
 # pylint: disable=R0903   # Few public methods
+
+logging.basicConfig(level=logging.INFO)
 
 class Network:
     """
@@ -148,9 +151,9 @@ class Network:
             for neighbor in node.neighbors:
                 # sometimes, old nodes can claim neighbors that no longer exists
                 if neighbor not in nodes:
-                    print(
-                        f"Node {node.node_id} claims ' \
-                        'non-existing node {neighbor} as neighbor"
+                    logging.warning(
+                        f"Node {node.node_id} claims " \
+                        "non-existing node {neighbor} as neighbor"
                     )
                     continue
                 edge = Edge(
@@ -160,16 +163,16 @@ class Network:
 
             # get edges from last working route
             if not node.last_working_route:
-                print(f"Non-valid route for node {node.node_id}")
+                logging.warning(f"Non-valid route for node {node.node_id}")
                 continue
 
             # sometimes working route can include non-existing nodes
             faulty_route = False
             for n in node.last_working_route:
                 if n not in self.nodes:
-                    print(
-                        f"Node {node.node_id} includes ' \
-                        'non-existant node {n} in last working route"
+                    logging.warning(
+                        f"Node {node.node_id} includes " \
+                        "non-existant node {n} in last working route"
                     )
                     faulty_route = True
             if faulty_route:
