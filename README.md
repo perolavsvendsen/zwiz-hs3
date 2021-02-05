@@ -18,5 +18,5 @@ python app.py <ip adress to HS3> <port>
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Other relevant projects
-Z-wave graph for Home Assistant (Javascript): https://github.com/AdamNaj/ZWaveGraphHA
+Z-wave graph for Home Assistant (Javascript): [https://github.com/AdamNaj/ZWaveGraphHA]<br />
 Deprecated z-wave graph for Home Assistant (Python): https://github.com/OmenWild/home-assistant-z-wave-graph
