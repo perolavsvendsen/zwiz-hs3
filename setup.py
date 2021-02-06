@@ -30,7 +30,7 @@ setup(
         "beautifulsoup4==4.9.3",
         "html5lib==1.1",
         "visdcc==0.0.40",
-        ]
+        ],
     tests_requires=[
         "pytest>=6.2.2"
         ]
