@@ -1,5 +1,6 @@
 [![](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org)
 ![](https://travis-ci.org/perolavsvendsen/zwiz-hs3.svg?branch=main)
+![Pylint](https://github.com/perolavsvendsen/zwiz-hs3/workflows/Pylint/badge.svg)
 
 ## zwiz-hs3
 Zwiz is a hobby-project attempting to graph my Z-wave network. It is made for visualizing a Z-wave network set up through Homeseer 3 on a UZB1 stick.
