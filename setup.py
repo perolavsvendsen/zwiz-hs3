@@ -5,7 +5,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "zwiz",
+    name = "zwiz-hs3",
     version = "0.1.0",
     author = "Per Olav Svendsen",
     author_email = "perolav@outlook.com",
