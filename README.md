@@ -20,7 +20,7 @@ python app.py <ip adress to HS3> <port>
 
 The app will start the Dash server on localhost and set up a website showing an interactive visualization of the z-wave network:
 
-![](img/screenshot_1.jpg)
+![](img/screenshot_2.gif)
 
 This is useful to understand the z-wave network, and spotting critical nodes. In the example below, you can see that the central node (as expected) is a local center but that another node is also quite central in the network.
 
