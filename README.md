@@ -2,6 +2,7 @@
 ![](https://travis-ci.org/perolavsvendsen/zwiz-hs3.svg?branch=main)
 ![Pylint](https://github.com/perolavsvendsen/zwiz-hs3/workflows/Pylint/badge.svg)
 [![ReadTheDocs](https://readthedocs.org/projects/zwiz-hs3/badge/?version=latest)](https://zwiz-hs3.readthedocs.io/en/latest/)
+[![codecov](https://codecov.io/gh/perolavsvendsen/zwiz-hs3/branch/main/graph/badge.svg?token=7IQPK1F1S6)](https://codecov.io/gh/perolavsvendsen/zwiz-hs3)
 
 ## zwiz-hs3
 Zwiz is a hobby-project graphing my Z-wave network. It is made for visualizing a Z-wave network set up through Homeseer 3 on a UZB1 stick, but could probably be easily adapted to visualize other networks.
