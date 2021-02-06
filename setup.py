@@ -14,7 +14,6 @@ setup(
     description = "A basic visualiser for Z-wave network in HS3",
     license = "MIT",
     keywords = "homeseer z-wave",
-    packages=['zwiz', 'tests'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 1 - Alpha",
