@@ -10,6 +10,7 @@ install:
   - pip install logging
   - pip install bs4
   - pip install pytest
+  - pip install html5lib
 # command to run tests
 script:
   - pytest

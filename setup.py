@@ -28,6 +28,7 @@ setup(
         "dash-core-components>=1.15.0",
         "dash-html-components>=1.1.2",
         "requests",
+        "logging",
         "beautifulsoup4==4.9.3",
         "html5lib>=1.1"],
     tests_requires=[
