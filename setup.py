@@ -14,7 +14,6 @@ setup(
     description = "A basic visualiser for Z-wave network in HS3",
     license = "MIT",
     keywords = "homeseer z-wave",
-    packages=['zwiz', 'tests'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 1 - Alpha",
@@ -28,7 +27,6 @@ setup(
         "dash-core-components>=1.15.0",
         "dash-html-components>=1.1.2",
         "requests",
-        "logging",
         "beautifulsoup4==4.9.3",
         "html5lib>=1.1"],
     tests_requires=[
