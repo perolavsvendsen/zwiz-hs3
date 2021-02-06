@@ -4,7 +4,7 @@
 ![ReadTheDocs](https://readthedocs.org/projects/zwiz-hs3/badge/?version=latest)
 
 ## zwiz-hs3
-Zwiz is a hobby-project attempting to graph my Z-wave network. It is made for visualizing a Z-wave network set up through Homeseer 3 on a UZB1 stick.
+Zwiz is a hobby-project graphing my Z-wave network. It is made for visualizing a Z-wave network set up through Homeseer 3 on a UZB1 stick, but could probably be easily adapted to visualize other networks.
 
 The visualisation is done using the fantastic [Dash by Plotly](https://plotly.com/python/).
 
