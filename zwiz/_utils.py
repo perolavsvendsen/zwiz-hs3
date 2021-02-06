@@ -2,6 +2,53 @@
 
 import re
 
+# pylint: disable=C0103   # Non-snake variable names
+# pylint: disable=R0902   # Many instances
+# pylint: disable=R0903   # Few public methods
+
+class Node:
+    """
+    This is a conveniance class holding the z-wave node object.
+    The purpose is to objectify the z-wave node, so that we can
+    put methods and attributes on it and easy working with the
+    node in various settings.
+    """
+
+    def __init__(self, node_id):
+        """
+        Initialize the Node object.
+
+        Other attributes are set directly to this object from scraper
+        functions. They are not pre-defined here. If the Node objects
+        becomes more important, pre-setting attributes and handling this
+        a bit more structurally migth be a good idea. For now, it does
+        its job.
+
+        Arguments:
+            node_id (int): The ID of the node corresponding to the ID
+                           in the z-wave network.
+        """
+
+        self.node_id = node_id
+
+
+class Edge:
+    """
+    This is a convencience class holding the z-wave edge (the relationship
+    between two nodes). The purpose of objectifying this is to make it easier
+    to work with the edges later.
+
+    """
+
+    def __init__(self, source: Node, target: Node, edgetype, weight):
+        """Initialize the Edge by passing the source and target node objects"""
+
+        self.source = source
+        self.target = target
+        self.type = edgetype
+        self.weight = weight
+        self.id = f"{source.node_id}__{target.node_id}"
+
 class Scrapers:
     """This is a utility class containing functions that scrape HTML"""
 
@@ -84,7 +131,7 @@ class Scrapers:
 
         """
 
-        from ._hs3data import Node
+        #from ._hs3data import Node   # pylint: disable=C0415   # import outside top-level
 
         node_trs = nodes_table.find_all('tr')
 
