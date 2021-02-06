@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3.6"      # current default Python on Travis CI
+  - "3.7"
+  - "3.8"
+# command to install dependencies
+install:
+  - pip install pandas==1.2.1
+  - pip install requests
+  - pip install logging
+  - pip install bs4
+  - pip install pytest
+# command to run tests
+script:
+  - pytest
