@@ -15,11 +15,11 @@
                            each other.
 """
 
+import logging
 import requests
 from bs4 import BeautifulSoup
-import logging
 import pandas as pd
-from zwiz._utils import Scrapers
+from ._utils import Scrapers
 
 # pylint: disable=C0103   # Non-snake variable names
 # pylint: disable=R0902   # Many instances
@@ -152,8 +152,10 @@ class Network:
                 # sometimes, old nodes can claim neighbors that no longer exists
                 if neighbor not in nodes:
                     logging.warning(
-                        f"Node {node.node_id} claims " \
-                        "non-existing node {neighbor} as neighbor"
+                        "Node %s claims " \
+                        "non-existing node %s as neighbor",
+                        node.node_id,
+                        neighbor
                     )
                     continue
                 edge = Edge(
@@ -163,7 +165,7 @@ class Network:
 
             # get edges from last working route
             if not node.last_working_route:
-                logging.warning(f"Non-valid route for node {node.node_id}")
+                logging.warning("Non-valid route for node %s", node.node_id)
                 continue
 
             # sometimes working route can include non-existing nodes
@@ -171,9 +173,9 @@ class Network:
             for n in node.last_working_route:
                 if n not in self.nodes:
                     logging.warning(
-                        f"Node {node.node_id} includes " \
-                        "non-existant node {n} in last working route"
-                    )
+                        "Node %s includes " \
+                        "non-existant node %s in last working route",
+                        node.node_id, n)
                     faulty_route = True
             if faulty_route:
                 continue

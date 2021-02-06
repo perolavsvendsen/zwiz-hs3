@@ -84,7 +84,7 @@ class Scrapers:
 
         """
 
-        from zwiz._hs3data import Node   # pylint: disable=C0415  # Import outside top-level
+        from ._hs3data import Node
 
         node_trs = nodes_table.find_all('tr')
 
