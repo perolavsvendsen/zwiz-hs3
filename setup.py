@@ -26,7 +26,7 @@ setup(
         "dash==1.19.0",
         "dash-core-components==1.15.0",
         "dash-html-components==1.1.2",
-        "requests==2.25.1",
+        "requests==2.31.0",
         "beautifulsoup4==4.9.3",
         "html5lib==1.1",
         "visdcc==0.0.40",
