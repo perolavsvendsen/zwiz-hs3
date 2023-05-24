@@ -65,7 +65,7 @@ class Network:
         # When testing, html is passed as a string to create a controlled environment
         if html is None:
             url = f"http://{ip}:{port}/{page}"
-            response = requests.get(url)
+            response = requests.get(url, timeout=10)
             if not response.ok:
                 raise IOError("Could not grab the page from HS3.")
             html = response.text
