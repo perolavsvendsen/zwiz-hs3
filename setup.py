@@ -23,7 +23,7 @@ setup(
     packages = ['zwiz'],
     install_requires=[
         "pandas==1.2.1",
-        "dash==1.19.0",
+        "dash==2.15.0",
         "dash-core-components==1.15.0",
         "dash-html-components==1.1.2",
         "requests==2.31.0",
