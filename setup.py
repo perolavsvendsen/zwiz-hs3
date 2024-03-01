@@ -24,7 +24,7 @@ setup(
     install_requires=[
         "pandas==1.2.1",
         "dash==1.19.0",
-        "dash-core-components==1.15.0",
+        "dash-core-components==2.0.0",
         "dash-html-components==1.1.2",
         "requests==2.31.0",
         "beautifulsoup4==4.9.3",
